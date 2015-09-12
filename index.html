@@ -19,6 +19,9 @@ $(document).ready( function() {
     });
 });
 
+function swapStyleSheet(sheet){
+	document.getElementById('pagestyle').setAttribute('href', sheet);
+}
 
 </script>
 
@@ -47,6 +50,9 @@ $(document).ready( function() {
 	<div class="section s1">
 		<div class="inner ">
 			<h1>Lets Change the Style Sheets!</h1>
+			<button onclick="swapStyleSheet('css/terrible.css')">Shitty Style Sheet</button>
+<button onclick="swapStyleSheet('css/demo.css')">Original Sheet</button>
+
 		</div>
 	</div>
 
